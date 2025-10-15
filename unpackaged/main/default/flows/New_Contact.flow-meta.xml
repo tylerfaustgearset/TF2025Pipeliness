@@ -154,10 +154,10 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>CreatedDate</field>
-            <operator>EqualTo</operator>
+            <field>DiscountPercentage__c</field>
+            <operator>GreaterThan</operator>
             <value>
-                <dateTimeValue>2000-01-01T00:00:00.000Z</dateTimeValue>
+                <numberValue>0.0</numberValue>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -238,7 +238,6 @@
             <dataType>String</dataType>
             <fieldText>Account</fieldText>
             <fieldType>DropdownBox</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <styleProperties>
                 <verticalAlignment>
@@ -271,6 +270,22 @@
                     <stringValue>Create other contact</stringValue>
                 </value>
             </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>helloworld</name>
+            <extensionName>c:helloworld</extensionName>
+            <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
